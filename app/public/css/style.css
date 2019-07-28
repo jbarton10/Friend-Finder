@@ -1,0 +1,22 @@
+#contentWindow{
+    margin:40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+.underline{
+    height:1px;
+    opacity: 0.4;
+    background: black;
+    width:90%;
+}
+#text{
+    margin-top:25px;
+    font-size: 20px;
+}
+.question{
+    margin-bottom: 10px;
+}
+#header{
+    font-size:35px;
+    font-weight: 700;
+}
