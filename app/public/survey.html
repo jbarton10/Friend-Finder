@@ -187,6 +187,20 @@
             <!-- This is where the link to the repo and database will go -->
         </div>
 
+        <!-- Modal for displaying data from the response -->
+        <div class="modal fade bd-example-modal-lg"  id = "responseModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div id="modalContent">
+                        <h1>Your Best Match is....</h1>
+                        <div id="bestMatchName"></div>
+                        <div id="bestMatchPic"></div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+
 
 
     </div>
@@ -241,8 +255,7 @@
 
                 var name_body = $(".nameInput").val();
                 var photo_body = $(".photoInput").val();
-                console.log(name_body);
-                console.log(photo_body);
+
 
                 
                 // var newFriend = {
@@ -253,16 +266,22 @@
                 var newFriend = {
                     name: name_body,
                     photo: photo_body,
-                    scores: [q1,q2,q3,q4,q5,q6,q7,q8,q9,10]
+                    scores: [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10]
                 }
 
                 $.post("api/friends", newFriend)
-                .done(function(data){
-                    console.log(data);
+                .then(function(data){
+                    
                     alert("Looking for Friends!")
+                    $("#bestMatchName").html("<h3>"+data.name+"</h3>");
+                    $("#bestMatchPic").html("<img src="+ data.photo+ "></img>");
+                    $("#responseModal").modal("show");
+                    console.log(data);
 
                 });
             });
+
+
 
 
         });
