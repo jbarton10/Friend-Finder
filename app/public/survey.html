@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/style.css">
+    
     <title>Survey</title>
 </head>
 
@@ -19,9 +20,12 @@
         <div class="underline"></div>
         <div id="aboutYou">
             <h2>About You</h2>
+            
             <h5>Name (Required)</h5>
-
+            <input type="text" class="form-control nameInput" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
             <h5>Link to an image (Required)</h5>
+            <input type="text" class="form-control photoInput" placeholder="Photo Link" aria-label="Username" aria-describedby="basic-addon1">
+
         </div>
         <div class="underline"></div>
 
@@ -29,8 +33,8 @@
             <h2>Question 1</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question1">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -44,8 +48,8 @@
             <h2>Question 2</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question2">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -59,8 +63,8 @@
             <h2>Question 3</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question3">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -74,8 +78,8 @@
             <h2>Question 4</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question4">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -89,8 +93,8 @@
             <h2>Question 5</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question5">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -104,8 +108,8 @@
             <h2>Question 6</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question6">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -119,8 +123,8 @@
             <h2>Question 7</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question7">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -134,8 +138,8 @@
             <h2>Question 8</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question8">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -149,8 +153,8 @@
             <h2>Question 9</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question9">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -164,8 +168,8 @@
             <h2>Question 10</h2>
             <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
             <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
+                
+                <select id="inputState" class="form-control question10">
                     <option selected>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -176,7 +180,7 @@
 
         </div>
         <br>
-        <button type="button" class="btn btn-secondary btn-lg btn-block">Submit to find friends!</button>
+        <button type="button" class="btn btn-secondary btn-lg btn-block" id = "submitButton">Submit to find friends!</button>
         <br>
         <div class="underline"></div>
         <div class="apiLinks">
@@ -187,8 +191,7 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -196,6 +199,76 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <!-- CLIENT SIDE JS FOR SENDING CODE TO SERVER -->
+        <script type="text/javascript">
+        
+        $("document").ready(function(){
+            $("#submitButton").on("click", function(event){
+                event.preventDefault();
+
+                var q1 = $(".question1" );
+                q1 = q1[0].options[q1[0].selectedIndex].text;
+
+                var q2 = $(".question2");
+                q2 = q2[0].options[q2[0].selectedIndex].text;
+
+                var q3 = $(".question3" );
+                q3 = q3[0].options[q3[0].selectedIndex].text;
+
+                var q4 = $(".question4");
+                q4 = q4[0].options[q4[0].selectedIndex].text;
+
+                var q5 = $(".question5" );
+                q5 = q5[0].options[q5[0].selectedIndex].text;
+
+                var q6 = $(".question6");
+                q6 = q6[0].options[q6[0].selectedIndex].text;
+
+                var q7 = $(".question7" );
+                q7 = q7[0].options[q7[0].selectedIndex].text;
+
+                var q8 = $(".question8");
+                q8 = q8[0].options[q8[0].selectedIndex].text;
+
+                var q9 = $(".question9" );
+                q9 = q9[0].options[q9[0].selectedIndex].text;
+
+                var q10 = $(".question10");
+                q10 = q10[0].options[q10[0].selectedIndex].text;
+            
+
+
+                var name_body = $(".nameInput").val();
+                var photo_body = $(".photoInput").val();
+                console.log(name_body);
+                console.log(photo_body);
+
+                
+                // var newFriend = {
+                //     name: name_body,
+                //     photo: photo_body,
+                //     scores: [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10]
+                // }
+                var newFriend = {
+                    name: name_body,
+                    photo: photo_body,
+                    scores: [q1,q2,q3,q4,q5,q6,q7,q8,q9,10]
+                }
+
+                $.post("api/friends", newFriend)
+                .done(function(data){
+                    console.log(data);
+                    alert("Looking for Friends!")
+
+                });
+            });
+
+
+        });
+
+        </script>
+
 </body>
 
 </html>
